@@ -1,0 +1,64 @@
+<%- include('partial/header') %>
+
+
+     <img src="img/1000.jpeg" alt="" class="card-img" width="100%">
+
+
+    <!-- Team Start -->
+    <div class="container-xxl bg-light my-6 py-6 pb-0">
+    
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">// 服務團隊</p>
+                <h1 class="display-6 mb-4">頂級師資</h1>
+            </div>
+            
+            
+
+    <div class="slide-container swiper wow fadeInUp" data-wow-delay="0.1s">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <% applicants.forEach( (item) => { %>
+                            <img src="/uploads/<%= item.account%>" alt="" class="card-img">
+                            <% }) %>
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <% applicants.forEach( (item) => { %>
+                        <h2 class="name"><%= item.name %></h2>
+                        <ul>
+                            <li>回訊快，同學透過FB與社團互動秒解難題。</li>
+                            <li>計量經濟與數理統計內容最詳細。</li>
+                            <li>上課幽默風趣，與學生相處零距離。</li>
+                          </ul>
+                          <% }) %>
+                        <!-- <div class="team-social">
+                            <button class="btn btn-primary  rounded-pill" data-bs-toggle="offcanvas" href="#sidebar1" aria-controls="sidebar">立即試聽</button>
+                        </div> -->
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div><br><br><br>
+
+    
+    
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <!--<div class="swiper-pagination"></div> -->
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
+<%- include('partial/footer') %>

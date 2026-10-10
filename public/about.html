@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <title>登峰文教機構網站 - 師資團隊</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid top-bar bg-dark text-light px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="small text-light" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="small text-light" href="#">Career</a></li>
+                    <li class="breadcrumb-item"><a class="small text-light" href="#">Terms</a></li>
+                    <li class="breadcrumb-item"><a class="small text-light" href="#">Privacy</a></li>
+                </ol>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn-lg-square text-primary border-end rounded-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn-lg-square text-primary pe-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="text-primary m-0"><i class="fas fa-book-open"></i>   登峰文教機構</h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link ">首頁</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">關於我們</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="about2.html" class="dropdown-item"><i class="bi bi-house"></i>  品牌導覽</a>
+                        <a href="about.html" class="dropdown-item"><i class="bi bi-people"></i>  師資團隊</a>
+                        <a href="service.html" class="dropdown-item"><i class="bi bi-collection-play"></i>  影音專區</a>
+                    </div>
+                </div>
+                <a href="product.html" class="nav-item nav-link">授課方式</a>
+                <a href="place.html" class="nav-item nav-link">服務據點</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">考試資訊</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="#" class="dropdown-item">研究所</a>
+                        <a href="#" class="dropdown-item">轉學考</a>
+                        <a href="#" class="dropdown-item">高普考</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link ">預約試聽</a>
+            </div>
+            <div class=" d-none d-lg-flex">
+                <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle">
+                    <i class="fa fa-phone text-primary"></i>
+                </div>
+                <div class="ps-3">
+                    <small class="text-primary mb-0">Call Us</small>
+                    <p class="text-light fs-5 mb-0">+5858 8888</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!--<div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/2.png" alt="" height="100">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="container text-center pt-5 pb-3">
+                                <h1 class="display-4 text-white animated slideInDown mb-3">師資團隊</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+     Carousel End -->
+
+
+     <img src="img/1000.jpeg" alt="" class="card-img" width="100%">
+
+
+    <!-- Team Start -->
+    <div class="container-xxl bg-light my-6 py-6 pb-0">
+    
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">// 服務團隊</p>
+                <h1 class="display-6 mb-4">頂級師資</h1>
+            </div>
+            
+            
+
+    <div class="slide-container swiper wow fadeInUp" data-wow-delay="0.1s">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/120.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">財務管理/宮野明美</h2>
+                        <ul>
+                            <li>回訊快，同學透過FB與社團互動秒解難題。</li>
+                            <li>計量經濟與數理統計內容最詳細。</li>
+                            <li>上課幽默風趣，與學生相處零距離。</li>
+                          </ul>
+                        <div class="team-social">
+                            <button class="btn btn-primary  rounded-pill" data-bs-toggle="offcanvas" href="#sidebar1" aria-controls="sidebar">立即試聽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/119.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">刑法總則/妃英理</h2>
+                        <ul>
+                            <li>親解各系所考題，講義題目最新最完整。</li>
+                            <li>破千人次與上萬時數的教學經驗。</li>
+                            <li>舉例說明邏輯清晰、貼切生動。</li>
+                          </ul>
+                        <div class="team-social">
+                            <button class="btn btn-primary  rounded-pill" data-bs-toggle="offcanvas" href="#sidebar1" aria-controls="sidebar">立即試聽</button>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/128.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">英文/貝爾摩德</h2>
+                        <ul>
+                            <li>強勢突破盲點、全面建構思維！</li>
+                            <li>曾任大學講師、政府研究計畫研究員。</li>
+                            <li>教學強調以淺顯易懂的方式。</li>
+                          </ul>
+                        <div class="team-social">
+                            <button class="btn btn-primary  rounded-pill" data-bs-toggle="offcanvas" href="#sidebar1" aria-controls="sidebar">立即試聽</button>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/121.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">資料結構/服部平藏</h2>
+                        <ul>
+                            <li>回訊快，同學透過FB與社團互動秒解難題。</li>
+                            <li>計量經濟與數理統計內容最詳細。</li>
+                            <li>上課幽默風趣，與學生相處零距離。</li>
+                          </ul>
+                        <div class="team-social">
+                            <button class="btn btn-primary  rounded-pill" data-bs-toggle="offcanvas" href="#sidebar1" aria-controls="sidebar">立即試聽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/122.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">線性代數/工藤優作</h2>
+                        <ul>
+                            <li>親解各系所考題，講義題目最新最完整。</li>
+                            <li>破千人次與上萬時數的教學經驗。</li>
+                            <li>舉例說明邏輯清晰、貼切生動。</li>
+                          </ul>
+                        <div class="team-social">
+                            <button class="btn btn-primary  rounded-pill" data-bs-toggle="offcanvas" href="#sidebar1" aria-controls="sidebar">立即試聽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/123.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">微積分/白鳥任三郎</h2>
+                        <ul>
+                            <li>強勢突破盲點、全面建構思維！</li>
+                            <li>曾任大學講師、政府研究計畫研究員。</li>
+                            <li>教學強調以淺顯易懂的方式。</li>
+                          </ul>
+                        <div class="team-social">
+                            <button class="btn btn-primary  rounded-pill" data-bs-toggle="offcanvas" href="#sidebar1" aria-controls="sidebar">立即試聽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/124.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">離散數學/高木涉</h2>
+                        <ul>
+                            <li>回訊快，同學透過FB與社團互動秒解難題。</li>
+                            <li>計量經濟與數理統計內容最詳細。</li>
+                            <li>上課幽默風趣，與學生相處零距離。</li>
+                          </ul>
+                        <div class="team-social">
+                            <button class="btn btn-primary  rounded-pill" data-bs-toggle="offcanvas" href="#sidebar1" aria-controls="sidebar">立即試聽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/125.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name text-center">統計學/羽田秀吉</h2>
+                        <ul>
+                            <li>親解各系所考題，講義題目最新最完整。</li>
+                            <li>破千人次與上萬時數的教學經驗。</li>
+                            <li>舉例說明邏輯清晰、貼切生動。</li>
+                          </ul>
+                        <div class="team-social">
+                            <button class="btn btn-primary  rounded-pill" data-bs-toggle="offcanvas" href="#sidebar1" aria-controls="sidebar">立即試聽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/126.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">資訊管理/千葉和伸</h2>
+                        <ul>
+                            <li>強勢突破盲點、全面建構思維！</li>
+                            <li>曾任大學講師、政府研究計畫研究員。</li>
+                            <li>教學強調以淺顯易懂的方式。</li>
+                          </ul>
+                        <div class="team-social">
+                            <button class="btn btn-primary  rounded-pill" data-bs-toggle="offcanvas" href="#sidebar1" aria-controls="sidebar">立即試聽</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/118.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">會計學/毛利小五郎</h2>
+                        <ul>
+                            <li>回訊快，同學透過FB與社團互動秒解難題。</li>
+                            <li>計量經濟與數理統計內容最詳細。</li>
+                            <li>上課幽默風趣，與學生相處零距離。</li>
+                          </ul>
+                        <div class="team-social">
+                            <button class="btn btn-primary  rounded-pill" data-bs-toggle="offcanvas" href="#sidebar1" aria-controls="sidebar">立即試聽</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/129.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">生物學/赤井秀一</h2>
+                        <ul>
+                            <li>親解各系所考題，講義題目最新最完整。</li>
+                            <li>破千人次與上萬時數的教學經驗。</li>
+                            <li>舉例說明邏輯清晰、貼切生動。</li>
+                          </ul>
+                        <div class="team-social">
+                            <button class="btn btn-primary  rounded-pill" data-bs-toggle="offcanvas" href="#sidebar1" aria-controls="sidebar">立即試聽</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="img/127.png" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">物理/宮野志保</h2>
+                        <ul>
+                            <li>強勢突破盲點、全面建構思維！</li>
+                            <li>曾任大學講師、政府研究計畫研究員。</li>
+                            <li>教學強調以淺顯易懂的方式。</li>
+                          </ul>
+                        <div class="team-social">
+                            <button class="btn btn-primary  rounded-pill" data-bs-toggle="offcanvas" href="#sidebar1" aria-controls="sidebar">立即試聽</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><br><br><br>
+
+    
+    
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <!--<div class="swiper-pagination"></div> -->
+    </div>
+</div>
+</div>
+</div>
+<!-- Team End -->
+
+<!-- Testimonial Start -->
+<div class="container-xxl bg-light my-6 py-6 pb-0">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+            <p class="text-primary text-uppercase mb-2">// 考取學員</p>
+            <h1 class="display-6 mb-4">他的成功，你的處方！</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+            <div class="testimonial-item bg-white rounded p-4">
+                <div class="d-flex align-items-center mb-4">
+                    <img class="flex-shrink-0 rounded-circle border p-1" src="img/111.png" alt="">
+                    <div class="ms-4">
+                        <h5 class="mb-1">毛利蘭</h5>
+                        <span>應屆考取 OO資管所 <span style="color:red;">榜首</span></span>
+                    </div>
+                </div>
+                <p class="mb-0">和伸老師每週都會盯緊複習進度，關心學生的狀況。跟緊老師們的上課腳步是基本要求，課後複習與題目演練才是致勝的關鍵！</p>
+            </div>
+            <div class="testimonial-item bg-white rounded p-4">
+                <div class="d-flex align-items-center mb-4">
+                    <img class="flex-shrink-0 rounded-circle border p-1" src="img/112.png" alt="">
+                    <div class="ms-4">
+                        <h5 class="mb-1">京極真</h5>
+                        <span>應屆考取 XX統計所 <span style="color:red;">榜首</span>、OO統計所</span>
+                    </div>
+                </div>
+                <p class="mb-0">感謝羽田秀吉老師把艱澀的統計學，讓學生快速理解。老師認真負責，解題思路清晰，對我的幫助很大。</p>
+            </div>
+            <div class="testimonial-item bg-white rounded p-4">
+                <div class="d-flex align-items-center mb-4">
+                    <img class="flex-shrink-0 rounded-circle border p-1" src="img/113.png" alt="">
+                    <div class="ms-4">
+                        <h5 class="mb-1">世良真純</h5>
+                        <span>考取 WW數據所科技組 <span style="color:red;">探花</span></span>
+                    </div>
+                </div>
+                <p class="mb-0">登峰從接洽到介紹，後續課務服務等，都做得非常周到。跟著老師的進度走，有問題即時詢問，一定能成功上榜！</p>
+            </div>
+            <div class="testimonial-item bg-white rounded p-4">
+                <div class="d-flex align-items-center mb-4">
+                    <img class="flex-shrink-0 rounded-circle border p-1" src="img/114.png" alt="">
+                    <div class="ms-4">
+                        <h5 class="mb-1">遠山和葉</h5>
+                        <span>考取 HH資管所資管組、WW資管所</span>
+                    </div>
+                </div>
+                <p class="mb-0">感謝平藏老師讓我從迷茫漸漸跟上進度，用清晰簡單的方式說明，透過大量例題增加印象。讓基礎底子低的我，也能順利上榜。</p>
+            </div>
+            <div class="testimonial-item bg-white rounded p-4">
+                <div class="d-flex align-items-center mb-4">
+                    <img class="flex-shrink-0 rounded-circle border p-1" src="img/115.png" alt="">
+                    <div class="ms-4">
+                        <h5 class="mb-1">服部平次</h5>
+                        <span>考取 調查局三等資訊科學組</span>
+                    </div>
+                </div>
+                <p class="mb-0">感謝老師的高水準教學，考試是一場煎熬的過程，但最重要的就是堅持，在努力的過程中也不要忘了初衷。</p>
+            </div>
+            <div class="testimonial-item bg-white rounded p-4">
+                <div class="d-flex align-items-center mb-4">
+                    <img class="flex-shrink-0 rounded-circle border p-1" src="img/117.png" alt="">
+                    <div class="ms-4">
+                        <h5 class="mb-1">工藤新一</h5>
+                        <span>考取 關務三等資訊處理</span>
+                    </div>
+                </div>
+                <p class="mb-0">畢業後全職準播一年，靠著老師的上課板書及特有的一套口訣與解題邏輯上榜。上課只要跟著老師抄寫，之後將筆記讀懂加強複習即可。</p>
+            </div>
+            <div class="testimonial-item bg-white rounded p-4">
+                <div class="d-flex align-items-center mb-4">
+                    <img class="flex-shrink-0 rounded-circle border p-1" src="img/116.png" alt="">
+                    <div class="ms-4">
+                        <h5 class="mb-1">鈴木園子</h5>
+                        <span>應屆考取 高考資訊處理 <span style="color:red;">榜首</span></span>
+                    </div>
+                </div>
+                <p class="mb-0">準備半年時間，同時應付課業與考試，考前做完考古題就順利上榜。準備資訊相關科目，一年可同時參加多場考試，多了許多上榜機會。</p>
+            </div>
+        </div>
+        <br>
+    </div>
+</div>
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-12">
+                    <h4 class="text-light mb-4">地址</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>台北市文山區</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+5858 8888</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>a109221031@mail.shu.edu.tw</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i class="fab fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">負責項目</h4>
+                    <a class="btn btn-link" href="">研究所</a>
+                    <a class="btn btn-link" href="">國營公職</a>
+                    <a class="btn btn-link" href="">轉學考</a>
+                    <a class="btn btn-link" href="">出國留學</a>
+                    <a class="btn btn-link" href="">多益托福</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-light mb-4">快速連接</h4>
+                    <a class="btn btn-link" href="index.html">首頁</a>
+                    <a class="btn btn-link" href="place.html">服務據點</a>
+                    <a class="btn btn-link" href="about.html">師資團隊</a>
+                    <a class="btn btn-link" href="contact.html">預約試聽</a>
+                    <a class="btn btn-link" href="">考試資訊</a>
+                    
+                </div>
+                <!--<div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Photo Gallery</h4>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/product-1.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/product-2.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/product-3.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/product-2.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/product-3.jpg" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid bg-light rounded p-1" src="img/product-1.jpg" alt="Image">
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                    <br>Distributed By: <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+        <!-- offcanvas1-->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar1" aria-controls="sidebar-label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">歡迎試聽</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+    
+            <div class="offcanvas-body">
+                <div> 請選擇試聽時間： </div>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                            <label for="name">姓名</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                            <label for="email">電子郵件</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="phone" class="form-control" id="phone" name="phone" placeholder="Your Phone">
+                            <label for="phone">聯絡電話</label>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-floating date" id="date3" data-target-input="nearest">
+                            <input type="datetime-local" class="form-control datetimepicker-input" id="datetime" name="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                            <label for="datetime">日期與時間</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <select class="form-select" id="item" name="item">
+                              <option value="研究所">研究所</option>
+                              <option value="轉學考">轉學考</option>
+                              <option value="國營公職">國營公職</option>
+                              <option value="出國留學">出國留學</option>
+                              <option value="多益托福">多益托福</option>
+                            </select>
+                            <label for="item">試聽項目</label>
+                          </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <select class="form-select" id="place" name="place">
+                              <option value="北車學堂">北車學堂</option>
+                              <option value="士林學堂">士林學堂</option>
+                              <option value="淡水學堂">淡水學堂</option>
+                              <option value="景美學堂">景美學堂</option>
+                              <option value="新莊學堂">新莊學堂</option>
+                              <option value="三重學堂">三重學堂</option>
+                              <option value="基隆學堂">基隆學堂</option>
+                              <option value="宜蘭學堂">宜蘭學堂</option>
+                              <option value="桃園學堂">桃園學堂</option>
+                              <option value="中壢學堂">中壢學堂</option>
+                              <option value="新竹學堂">新竹學堂</option>
+                              <option value="苗栗學堂">苗栗學堂</option>
+                              <option value="台中學堂">台中學堂</option>
+                              <option value="西屯學堂">西屯學堂</option>
+                              <option value="彰化學堂">彰化學堂</option>
+                              <option value="南投學堂">南投學堂</option>
+                              <option value="虎尾學堂">虎尾學堂</option>
+                              <option value="北港學堂">北港學堂</option>
+                              <option value="嘉義學堂">嘉義學堂</option>
+                              <option value="台南學堂">台南學堂</option>
+                              <option value="高雄學堂">高雄學堂</option>
+                              <option value="屏東學堂">屏東學堂</option>
+                              <option value="台東學堂">台東學堂</option>
+                              <option value="花蓮學堂">花蓮學堂</option>
+                              <option value="澎湖學堂">澎湖學堂</option>
+                            </select>
+                            <label for="place">試聽地點</label>
+                          </div>
+                    </div>
+                    
+                    
+                    <div class="col-6">
+                        <button class="btn btn-primary w-100 py-3" data-bs-toggle="modal" data-bs-target="#exM5" id="mysubmit">送出</button>
+                    </div>
+                    <div class="col-6">
+                        <input type="reset" name="Submit" id="reset"  value="重新輸入" class="btn btn-default btn-primary w-100 py-3">
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
+
+        <!-- Modal -->
+    <div class="modal" id="exM5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exM5Label">請確認輸入資料</h5>
+                    <button type ="button" class="close btn-primary" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"> X </span>
+                    </button>
+                </div>
+            <div class="modal-body">
+                <p id = "mBody"></p>
+                <button type="button" class="btn btn-primary btn-sm" id="btnM5">確認</button>
+
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+        $("#mysubmit").click(function () {
+        var 
+            n = $("#name").val(), 
+            e = $("#email").val(),
+            p1 = $("#phone").val(),
+            i = $("#item").val(), 
+            d = $("#datetime").val(); 
+            p = $("#place").val();
+            
+        $("#mBody").html("姓名："+ n +"<br>" + "電郵："+ e +"<br>"+ "聯絡電話："+ p1 +"<br>"+ "日期與時間："+d +"<br>"+"試聽項目："+ i+ "<br>" + "試聽地點："+p +"<br>");
+        /** $("#mBody").html("姓名：" + n + "<br>" + "電郵：" + e + "<br>" + "備註：" + m +"<br>");**/
+        });
+        $("#btnM5").click(function () {
+       alert('預約成功！'); //可以不要
+       $('#formfield').submit();
+        });
+       </script> 
+
+       <!--清除-->
+    <script type="text/javascript">
+        document.getElementById("reset").onclick = function () {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("item").value = "";
+            document.getElementById("datetime").value = "";
+            document.getElementById("place").value = "";
+        }
+      
+</script> 
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Swiper JS (team)-->
+      <!--Uncomment this line-->
+      <script src="js/swiper-bundle.min.js"></script>
+
+      <!-- JavaScript (team)-->
+        <!--Uncomment this line-->
+      <script src="js/script.js"></script>
+</body>
+
+</html>

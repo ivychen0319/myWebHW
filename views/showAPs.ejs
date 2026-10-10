@@ -1,0 +1,64 @@
+<%- include('partial/header') %>
+<img src="img/bg.jpeg" alt="" class="card-img" width="100%">
+<br>
+ <!-- Team Start -->
+ <!-- <div class="container-xxl bg-light my-6 py-6 pb-0"> -->
+ <div class="container-xxl bg-light my-6 py-6 pb-0">
+ <div class="container">
+ <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+ <h1 class="mb-5" style="color: #8280ff  ;">學生列表</h1>
+ </div>
+ <div class="row g-4">
+<% applicants.forEach( (item) => { %>
+ <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="zi_box_1">
+ <div class="team-item  rounded overflow-hidden">
+ <div class="rounded-circle overflow-hidden m-4">
+ <img class="img-fluid" src="/uploads/<%= item.account%>" alt="">
+ </div>
+ <h5 class="mb-0 text-center text-primary" ><%= item.name %> </h5>
+ <hr style="border-top:3px double #8280ff;"/>
+ <p>
+    電子郵件：<%= item.email%><br>
+    帳號：<%= item.account%><br>
+    密碼：<%= item.password%></p>
+ <div class="d-flex justify-content-center mt-3">
+    <!-- <button class="btn btn-primary w-100 "  id="del">刪除</button> -->
+ </div>
+ </div></div>
+ </div>
+ <% }) %>
+ </div>
+ </div>
+ </div>
+ <!-- Team End -->
+
+
+
+
+<script>
+    $("#del").click(function(){
+      var judge = confirm("確認刪除嗎？")
+      if (judge = ture){
+        $("#ttt").remove();
+      }
+  });
+</script>
+<%- include('partial/footer') %>
+
+<script>
+  function run(){
+      var password = prompt("請輸入密碼");
+      if(password != 'A109221031'){
+          document.body.innerHTML = '';
+          document.body.innerHTML = '密碼錯誤，您無法查看';
+      }else{
+          alert('密碼正確！');
+          $(".mask").remove();
+      }
+  }
+  run();
+</script>
+
+
+

@@ -1,0 +1,34 @@
+<%- include('partial/header') %>
+<img src="img/1000.jpeg" alt="" class="card-img" width="100%">
+ <!-- Team Start -->
+ <div class="container-xxl bg-light pt-5 pb-3">
+ <div class="container">
+ <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+ <h1 class="mb-5">學生列表</h1>
+ </div>
+ <div class="row g-4">
+<% c.forEach( (item) => { %>
+ <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+ <div class="team-item  rounded overflow-hidden">
+ <div class="rounded-circle overflow-hidden m-4">
+ <img class="img-fluid" src="/uploads/<%= item.account%>" alt="">
+ </div>
+ <h5 class="mb-0 text-center text-primary" ><%= item.name %> </h5>
+ <p>
+    電子郵件：<%= item.email%><br>
+    帳號：<%= item.account%><br>
+    密碼：<%= item.password%></p>
+ <div class="d-flex justify-content-center mt-3">
+    <!-- <button class="btn btn-primary w-100 py-3"  id="del">刪除</button> -->
+ </div>
+ </div>
+ </div>
+ <% }) %>
+ </div>
+ </div>
+ </div>
+ <!-- Team End -->
+
+
+
+

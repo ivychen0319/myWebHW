@@ -1,0 +1,19 @@
+<%- include('partial/header') %>
+ <!-- Team Start -->
+ <img src="img/1000.jpeg" alt="" class="card-img" width="100%">
+ <div class="container-xxl pt-5 pb-3">
+ <div class="container">
+ <h1 class="text-center">學生列表</h1>
+ <% applicants.forEach( (item) => { %>
+ <h3 class="text-center">
+ <%= item.name %>,
+ <%= item.email %>,
+ <%= item.account %>
+ <%= item.password %>
+ <%= item.password2 %>
+ </h3>
+ <% }) %>
+ </div>
+ </div>
+ <!-- Team End -->
+<%- include('partial/footer') %> 

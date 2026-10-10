@@ -1,0 +1,158 @@
+<%- include('partial/header') %>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <img src="img/1000.jpeg" alt="" class="card-img" width="100%">
+
+
+    
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl bg-light my-6 py-6 pb-0">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">// 註冊會員</p>
+                <!-- <h1 class="display-6 mb-4">選擇登峰，如虎添翼！</h1> -->
+            </div>
+            
+            
+            <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-0">
+                    
+                    <div class="col-md-12 bg-secondary d-flex align-items-center">
+                        <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                            <form action="/upload" method="post" enctype="multipart/form-data">
+                                <input name="fileUpload" id="previewImage" type="file">
+                                <!-- <input accept="image/*" id="previewImage" type="file"> -->
+                                <!-- <input type="submit" name="submit" id="submit"  /> -->
+                                 
+        <br><br>
+                            <!--預覽區塊-->
+                            <img id="demo" height="100"/>
+                         <br>
+                            <!--<form action="dosomething" onsubmit="return validateForm(this)"> 
+                                <form id="formfield" action="index.html">-->
+                            <!-- <h1 class="text-white mb-4">註冊</h1> -->
+                                <div class="row g-3">
+                                    <div class="col-md-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                                            <label for="name">姓名</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                                            <label for="email">電子郵件</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-floating">
+                                            <input type="account" class="form-control" id="account" name="account" placeholder="Your account">
+                                            <label for="account">帳號</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="password" class="form-control" id="password" name="password" placeholder="Your password">
+                                            <label for="password">密碼</label>
+                                            <i id="checkEye" class="fas fa-eye"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="password2" class="form-control" id="password2" name="password2" placeholder="Your password2">
+                                            <label for="password2">確認密碼</label>
+                                            <i id="checkEye" class="fas fa-eye"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    <div class="col-md-6">	
+                                        <button class="btn btn-primary w-100 py-3" data-bs-toggle="modal" id="submit">送出</button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="reset" name="Submit" id="reset" value="重新輸入" class="btn btn-default btn-primary w-100 py-3">
+                                      </div></form>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        </div>
+    <!-- Testimonial End -->
+
+    <script>
+        function validate() {
+        var password1 = document.getElementById("password1").value;
+        var password2 = document.getElementById("password2").value;
+        if(pw1 == pw2) {
+        document.getElementById("tishi").innerHTML="<font color='green'>兩次密碼相同</font>";
+        document.getElementById("submit").disabled = false;
+        }
+        else {
+        document.getElementById("tishi").innerHTML="<font color='red'>兩次密碼不相同</font>";
+        document.getElementById("submit").disabled = true;
+        }
+        }
+        </script>
+
+
+
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+<!--預覽圖片-->
+<script>
+
+var imageProc = function (input) {
+ if (input.files && input.files[0]) {
+  // 建立一個 FileReader 物件
+   var reader = new FileReader();
+
+  // 當檔案讀取完後，所要進行的動作
+  reader.onload = function (e) {
+    // 顯示圖片
+     $('#demo').attr('src', e.target.result);
+    // 將 DataURL 放到表單中
+    $("input[name='imagestring']").val(e.target.result);
+   };
+  reader.readAsDataURL(input.files[0]);
+
+  var app = express();
+app.use(express.static('public'));
+ }
+}
+
+
+$(document).ready(function() {
+// 綁定事件
+ $("#previewImage").change(function () {
+   imageProc(this);
+ });
+
+});
+
+</script>
+
+
+    <!--清除-->
+    <script type="text/javascript">
+        document.getElementById("reset").onclick = function () {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("item").value = "";
+            document.getElementById("datetime").value = "";
+            document.getElementById("place").value = "";
+        }
+          
+    </script> 
+
+
+    
+
+<%- include('partial/footer') %>
